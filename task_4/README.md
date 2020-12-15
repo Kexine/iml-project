@@ -4,7 +4,7 @@ The task description can be found in [task_description.pdf](task_description.pdf
 
 ## Results
 
-Our model achieved an accuracy of 69.86% on the public part of the test set and 69.71% on the private part. The hard baseline was at 68.8% accuracy.
+Our model achieved an accuracy of 69.86% on the public part of the test set and 69.71% on the private part. The predictions can be found in [submission.txt](submission.txt). The hard baseline was at 68.8% accuracy.
 
 
 ## Reproducability
