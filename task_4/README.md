@@ -1,9 +1,7 @@
 # Task 4
-
 The task description is in [task_description.pdf](task_description.pdf).
 
 ## Results
-
 Our model achieved an accuracy of 69.86% on the public part of the test set and 69.71% on the private part. The predictions are in [submission.txt](submission.txt). 
 
 The hard baseline was at 68.8% accuracy.
@@ -21,7 +19,6 @@ Some modifications to the original code have been made to ensure easy and fast r
 
 
 ## Report
-
 The following report describes the approach that led to our solution in [main.ipynb](main.ipynb).
 
 1)  We use Google Colab so that we have access to a TPU. Our Google Drive is mounted onto Colab and the necessary files are copied to the local disk.
