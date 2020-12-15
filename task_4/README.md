@@ -6,16 +6,18 @@ The task description can be found in [task_description.pdf](task_description.pdf
 
 Our model achieved an accuracy of 69.86% on the public part of the test set and 69.71% on the private part. The hard baseline was at 68.8% accuracy.
 
-Some changes to the original code have been made to ensure (fast) reproducability.
-
 ## Reproducability
-In order to reproduce the results you need to use Google Colab and select 'TPU' as runtime type. Then, under 'Runtime', click on 'Run all'.
+In order to reproduce the results you need to use Google Colab and select 'TPU' as runtime type. Then, under 'Runtime', click on 'Run all'. Some modifications to the original code have been made to ensure easy and fast reproducability. The modifications are clearly marked with comments and mainly deal with the following:
+* The needed data is loaded from Google Cloud Storage buckets that are publicly accessible so that you don't have to mount your own Google Drive onto Colab.
+* test
+
+
 
 ## Report
 
 The following report describes the approach that led to our solution.
 
-1)	We use Google Colab so that we have access to a TPU. Our Google Drive is mounted onto Colab and the necessary files are copied to the local disk.
+1)  We use Google Colab so that we have access to a TPU. Our Google Drive is mounted onto Colab and the necessary files are copied to the local disk.
 2)	Images, test and train triplets are loaded. Train triplets are labeled with 1 and the switched train triplets, i.e. columns B and C switched, are labeled with 0 and then both are combined into a balanced training set X_train.
 3)	Because we want to use a TPU, we write our test and training datasets into TFRecords. These TFRecords are copied into a Google Cloud Storage bucket so that they can later be accessed by the TPU during training and prediction.
 4)	Connection to TPU is established.
