@@ -14,7 +14,7 @@ In order to reproduce the results you need to use Google Colab and select 'TPU' 
 
 Some modifications to the original code have been made to ensure easy and fast reproducability. The modifications are clearly marked with comments and mainly deal with the following:
 * The needed data is loaded from Google Cloud Storage buckets that are publicly accessible and not from Google Drive.
-* The part where images are written to TFRecord files and uploaded to a GCS bucket is not executed as it requires granting access to the Google Cloud Platform. In addition, it takes a long time. (See point 3 in the report below.)
+* The part where images are written to TFRecord files and uploaded to a GCS bucket is not executed as it requires granting access to the Google Cloud Platform. In addition, it takes a long time.
 * The submission files containing the predictions for the test set that were saved onto my Google Drive are being saved onto the local disk.
 
 
