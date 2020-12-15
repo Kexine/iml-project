@@ -6,11 +6,12 @@ The task description can be found in [task_description.pdf](task_description.pdf
 
 Our model achieved an accuracy of 69.86% on the public part of the test set and 69.71% on the private part. The hard baseline was at 68.8% accuracy.
 
+
 ## Reproducability
 In order to reproduce the results you need to use Google Colab and select 'TPU' as runtime type. Then, under 'Runtime', click on 'Run all'. Some modifications to the original code have been made to ensure easy and fast reproducability. The modifications are clearly marked with comments and mainly deal with the following:
-* The needed data is loaded from Google Cloud Storage buckets that are publicly accessible so that you don't have to mount your own Google Drive onto Colab.
-* test
-
+* The needed data is loaded from Google Cloud Storage buckets that are publicly accessible and not from Google Drive.
+* The part where images are written to TFRecord files and uploaded to a GCS bucket is not executed as it requires granting access to the Google Cloud Platform. In addition, it takes a long time. (See point 3 in the report below.)
+* The submission files containing the predictions for the test set that were saved onto my Google Drive are being saved onto the local disk.
 
 
 ## Report
