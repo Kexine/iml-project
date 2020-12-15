@@ -10,7 +10,9 @@ The hard baseline was at 68.8% accuracy.
 
 
 ## Reproducability
-In order to reproduce the results you need to use Google Colab and select 'TPU' as runtime type. Then, under 'Runtime', click on 'Run all'. The following two notebooks were used: [main.ipynb](main.ipynb), [model_selection.ipynb](model_selection.ipynb). Read point 9 in the report below to understand the difference between these two files.
+In order to reproduce the results you need to use Google Colab and select 'TPU' as runtime type. Then, under 'Runtime', click on 'Run all'. 
+
+The following two notebooks were used: [main.ipynb](main.ipynb), [model_selection.ipynb](model_selection.ipynb). Read point 9 in the report below to understand the difference between these two files.
 
 Some modifications to the original code have been made to ensure easy and fast reproducability. The modifications are clearly marked with comments and mainly deal with the following:
 * The needed data is loaded from Google Cloud Storage buckets that are publicly accessible and not from Google Drive.
