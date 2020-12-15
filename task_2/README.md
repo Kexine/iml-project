@@ -1,4 +1,4 @@
-# Task 2
+# Task 2 – Medical Events Prediction
 The task description is in [task_description.pdf](task_description.pdf).
 
 ## Results
