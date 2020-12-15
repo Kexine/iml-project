@@ -1,4 +1,4 @@
-# Task 4
+# Task 4 – Food Taste Similarity
 The task description is in [task_description.pdf](task_description.pdf).
 
 ## Results
