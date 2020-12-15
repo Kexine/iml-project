@@ -20,7 +20,7 @@ Some modifications to the original code have been made to ensure easy and fast r
 
 ## Report
 
-The following report describes the approach that led to our solution.
+The following report describes the approach that led to our solution in [main.ipynb](main.ipynb).
 
 1)  We use Google Colab so that we have access to a TPU. Our Google Drive is mounted onto Colab and the necessary files are copied to the local disk.
 2)	Images, test and train triplets are loaded. Train triplets are labeled with 1 and the switched train triplets, i.e. columns B and C switched, are labeled with 0 and then both are combined into a balanced training set X_train.
