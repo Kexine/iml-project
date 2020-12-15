@@ -6,6 +6,8 @@ The task description can be found in [task_description.pdf](task_description.pdf
 
 Our model achieved an accuracy of 69.86% on the public part of the test set and 69.71% on the private part. The hard baseline was at 68.8% accuracy.
 
+Some changes to the original code have been made to ensure (fast) reproducability.
+
 ## Reproducability
 In order to reproduce the results you need to use Google Colab and select 'TPU' as runtime type. Then, under 'Runtime', click on 'Run all'.
 
