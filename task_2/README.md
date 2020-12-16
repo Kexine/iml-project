@@ -2,8 +2,9 @@
 The task description is in [task_description.pdf](task_description.pdf).
 
 ## Results
-TBD
+Our model achieved a score of 0.7795 on the public part of the test set and 0.7745 on the private part. The predictions are in [submission.zip](submission.zip).
 
+The hard baseline was at 
 
 ## Reproducability
 TBD
