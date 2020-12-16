@@ -7,7 +7,7 @@ Our model achieved a score of 0.7795 on the public part of the test set and 0.77
 The hard baseline was at a score of 0.772.
 
 ## Reproducability
-The following notebook was used: [main.ipynb](main.ipynb). In order to reproduce the results you can open the notebook in Google Colab and select 'GPU' as runtime type. Then, under 'Runtime', click on 'Run all'.
+The following notebook was used: [main.ipynb](main.ipynb). In order to reproduce the results you need to open the notebook in Google Colab and select 'GPU' as runtime type. Then, under 'Runtime', click on 'Run all'.
 
 ## Report
 The following report describes the approach that led to our solution in [main.ipynb](main.ipynb).
