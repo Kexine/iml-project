@@ -10,7 +10,7 @@ TBD
 
 
 ## Report
-The following report describes the approach that led to our solution in (...).
+The following report describes the approach that led to our solution in [main.ipynb](main.ipynb).
 
 1)	Training and test data are loaded with pandas. Column names are defined as specified in the submission format in [train_labels.csv](train_labels.csv) and partitioned into the corresponding subtasks 1, 2 and 3.
 2)	First, we focus on subtask 1 and 2 where we perform binary classification. 
