@@ -18,7 +18,7 @@ The following report describes the approach that led to our solution in [main.ip
 4)	We create an artifical neural network (ANN) classifier using the Keras functional API. We use multiple outputs so that we can perform binary classification for every label in subtask 1+2 simultaneously and benefit from the correlations in the labels that our ANN captures. In order to find the correct hyperparameters we create a custom sklearn classifier so that the Keras functional API can be used in the Pipeline and the GridSearchCV functions from scikit-learn. Please note that we previously performed a more extensive hyperparameter search than specified in [main.ipynb](main.ipynb) using ETH Zurich's Euler cluster with 48 CPU cores.
 5)  We perform cost-sensitive classification because our dataset is highly imbalanced.
 6)	We use StandardScaler from sklearn to scale the features and then 5-fold CV is performed using GridSearchCV with 'roc_auc' as our scoring function and using the best found parameters, we make predictions.
-7)	Next, we focus on subtask 3 where we perform on regression.
+7)	Next, we focus on subtask 3 where we perform regression.
 8)	Again, we perform feature engineering using the same procedure as above. The only difference is that we specify less columns to be relevant.
 9)	Here we try the models Ridge and RandomForestRegressor from sklearn and for each label separately we perform GridSearchCV using 'r2' as our scoring function and with the best found parameters we make predictions.
 10)	Finally, we save our predictions as a zip file using pandas.
