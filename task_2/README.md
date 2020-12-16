@@ -19,6 +19,6 @@ The following report describes the approach that led to our solution in [main.ip
 5)  We perform cost-sensitive classification because our dataset is highly imbalanced.
 6)	We use StandardScaler from sklearn to scale the features and then 5-fold CV is performed using GridSearchCV with 'roc_auc' as our scoring function and using the best found parameters, we make predictions.
 7)	Next, we focus on subtask 3 where we perform regression.
-8)	Again, we perform feature engineering using the same procedure as above. The only difference is that we specify less columns to be relevant.
+8)	Again, we do feature engineering using the same procedure as above. The only difference is that we specify less columns to be relevant.
 9)	Here we try the models Ridge and RandomForestRegressor from sklearn and for each label separately we perform GridSearchCV using 'r2' as our scoring function and with the best found parameters we make predictions.
 10)	Finally, we save our predictions as a zip file using pandas.
